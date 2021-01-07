@@ -1,0 +1,78 @@
+/* nav模块 */
+
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    float: left;
+    margin: 40px 0 0 190px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+    margin: 0 30px;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 45px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sk_con {
+    float: right;
+}
+
+.sk_con ul li {
+    float: left;
+    margin: 0 20px;
+}
+
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    font-size: 14px;
+}
+
+/* 鼠标经过文字过渡变大 */
+
+.sk_con ul li a:hover {
+    transition: all 0.2s linear 0s;
+    transform: scale(1.3);
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+
+/* 列表主体模块 */
+
+.sk_bd ul li {
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    /* li本来有个1px边框,这里使它变透明，下面鼠标经过hover经过变红 */
+    border: 1px solid transparent;
+}
+
+/* 第四个盒子去掉右边框 */
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
